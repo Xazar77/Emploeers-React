@@ -7,7 +7,10 @@ ReactDOM.render(
   <React.StrictMode>
     <App/>
   </React.StrictMode>,
+<<<<<<< HEAD
   
+=======
+>>>>>>> emploees-list
   document.getElementById('root')
 );
 
