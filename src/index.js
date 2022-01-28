@@ -5,11 +5,7 @@ import App from './components/app/app'
 
 ReactDOM.render(
   <React.StrictMode>
-<<<<<<< HEAD
-  <App/>
-=======
     <App/>
->>>>>>> search-panel
   </React.StrictMode>,
   
   document.getElementById('root')
