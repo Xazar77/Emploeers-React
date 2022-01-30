@@ -4,8 +4,8 @@ import { Component } from 'react';
 import AppInfo from '../app-info/app-info';
 import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
-import EmployersList from '../employers-list/employers-list';
-import EmployersAddForm from '../employers-add-form/employers-add-form';
+import EmployeesList from '../employees-list/employees-list';
+import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
 
@@ -76,6 +76,8 @@ class App extends Component {
   //       })
   //   }))
   // }
+
+  
   // onToggleRise = (id) => {
   //   this.setState(({ data }) => ({                // 2 ВАРИАНТ
   //     data: data.map(item => {
@@ -151,13 +153,13 @@ class App extends Component {
             onFilterSelect={this.onFilterSelect}/>
           </div>
           
-        <EmployersList
+        <EmployeesList
           data={visibleData}
           onDelete={this.deletItem}
           // onToggleIncrease={this.onToggleIncrease}
           // onToggleRise={this.onToggleRise}
           onToggleProp={this.onToggleProp}/>
-        <EmployersAddForm
+        <EmployeesAddForm
           onAdd={this.addItem}/>
       </div>
     );

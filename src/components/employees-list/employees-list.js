@@ -1,17 +1,17 @@
 
 
-import EmployersListItem from "../employers-list-item/employers-list-item";
+import EmployeesListItem from "../employees-list-item/employees-list-item";
 
-import './employers-list.css';
+import './employees-list.css';
 
 // const EmployersList = ({ data, onDelete, onToggleIncrease, onToggleRise }) => {
-const EmployersList = ({data, onDelete, onToggleProp}) => {
+const EmployeesList = ({data, onDelete, onToggleProp}) => {
 
     const elements = data.map(item => {
         const {id, ...itemProps} = item
         return (
             // <EmployeesListItem name={item.name} salary={item.salary} />
-            <EmployersListItem
+            <EmployeesListItem
                 key={id}
                 {...itemProps}     //Данная запись аналогична записи выше
                 onDelete={() => onDelete(id)}
@@ -29,4 +29,4 @@ const EmployersList = ({data, onDelete, onToggleProp}) => {
     
 }
 
-export default EmployersList;
+export default EmployeesList;
